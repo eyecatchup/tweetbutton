@@ -5,7 +5,7 @@
   <title>A custom tweet button (with tweet count)</title>
   <!--
     Copyright: 2013 - present, Stephan Schmitz <eyecatchup@gmail.com>
-	License:   http://eyecatchup.mit-license.org/
+    License:   http://eyecatchup.mit-license.org/
     Source:    https://github.com/eyecatchup/tweetbutton/
     Demo:      http://fiddle.jshell.net/eyecatchup/Th6P2/show/
   -->
@@ -29,7 +29,7 @@
 
     var a = window.location.href;
     var b = 'http://urls.api.twitter.com/1/urls/count.json?url=' + encodeURIComponent(a);
-    var c = 'http://twitter.com/intent/tweet?related=&text=' + encodeURIComponent(t) + '&url=' + a + '&via=';
+    var c = 'http://twitter.com/intent/tweet?related=&text=' + encodeURIComponent(t) + '&url=' + a + '&via=' + u;
     $('#count, #b').click(function(e) {
       e.preventDefault();
       window.open(c,'','width=550,height=420,toolbar=0,menubar=0,location=0,status=0,scrollbars=0,resizable=1,left=100,top=100');
